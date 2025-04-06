@@ -34,6 +34,8 @@ pip install -r requirements.txt
 
 ## How to run tests
 
+Locust will be accesible in  http://localhost:8089, so make sure you have that port free. Take into account that at least you will need 15 users (one per testing class), but we strongly recommend 20.
+
 In order to run all tests you can run the following command:
 
 ``` bin/bash
