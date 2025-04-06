@@ -7,4 +7,5 @@ class BaseCompany(HttpUser):
     def on_start(self):
         res = self.client.post("/api/auth/login", json={"id": COMPANY_EMAIL, "password": COMPANY_PASSWORD})
         self.token = res.json().get("token")
+        self.id = res.json().get("id")
         self.headers = {"Authorization": f"Bearer {self.token}"}
