@@ -1,5 +1,5 @@
 from locust import task
-from baseCustomer import BaseCustomer
+from customer.baseCustomer import BaseCustomer
 
 class CustomerEmergencyContacts(BaseCustomer):
 

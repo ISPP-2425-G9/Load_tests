@@ -1,5 +1,6 @@
 from locust import task
-from baseCompany import BaseCompany
+from company.baseCompany import BaseCompany
+
 
 class CompanyCompanies(BaseCompany):
 

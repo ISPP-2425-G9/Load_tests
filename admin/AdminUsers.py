@@ -1,5 +1,5 @@
 from locust import task
-from baseAdmin import BaseAdmin
+from admin.baseAdmin import BaseAdmin
 import random
 
 class AdminUsers(BaseAdmin):

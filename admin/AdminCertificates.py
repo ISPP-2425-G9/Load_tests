@@ -1,6 +1,5 @@
 from locust import task
-from baseAdmin import BaseAdmin
-
+from admin.baseAdmin import BaseAdmin
 
 class AdminDeathCertificates(BaseAdmin):
 

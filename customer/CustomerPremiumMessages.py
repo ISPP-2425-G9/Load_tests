@@ -1,6 +1,7 @@
 import random
 from locust import task
-from baseCustomerPremium import BaseCustomerPremium
+from customer.baseCustomerPremium import BaseCustomerPremium
+
 
 class CustomerPremiumMessages(BaseCustomerPremium):
 

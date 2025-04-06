@@ -1,6 +1,6 @@
 
 from locust import task, between
-from baseAdmin import BaseAdmin
+from admin.baseAdmin import BaseAdmin
 from config import BASE_URL
 
 class AdminCompanies(BaseAdmin):
