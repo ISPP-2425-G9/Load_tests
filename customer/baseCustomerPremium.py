@@ -1,5 +1,5 @@
 from locust import HttpUser, between
-from config import BASE_URL, CLIENT_PREMIUM_EMAIL, CLIENT_PREMIUM_PASSWORD
+from config import BASE_URL, CLIENT_PREMIUM_EMAIL, CLIENT_PREMIUM_OBITUARY_ID, CLIENT_PREMIUM_PASSWORD
 
 class BaseCustomerPremium(HttpUser):
     abstract = True
@@ -10,4 +10,5 @@ class BaseCustomerPremium(HttpUser):
         res = self.client.post("/api/auth/login", json={"id": CLIENT_PREMIUM_EMAIL, "password": CLIENT_PREMIUM_PASSWORD})
         self.token = res.json().get("token")
         self.id = res.json().get("id")
+        self.obituary_id = CLIENT_PREMIUM_OBITUARY_ID
         self.headers = {"Authorization": f"Bearer {self.token}"}

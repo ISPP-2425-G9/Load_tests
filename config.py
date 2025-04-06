@@ -16,3 +16,6 @@ CLIENT_PREMIUM_PASSWORD = os.getenv("CLIENT_PASSWORD", "customer")
 
 COMPANY_EMAIL = os.getenv("COMPANY_EMAIL", "empresa1@caronte.site")
 COMPANY_PASSWORD = os.getenv("COMPANY_PASSWORD", "company")
+
+CLIENT_OBITUARY_ID = os.getenv("CLIENT_OBITUARY_ID", "1")
+CLIENT_PREMIUM_OBITUARY_ID = os.getenv("CLIENT_PREMIUM_OBITUARY_ID", "2")

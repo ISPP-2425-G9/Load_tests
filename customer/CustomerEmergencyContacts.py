@@ -1,7 +1,7 @@
 from locust import task
 from baseCustomer import BaseCustomer
 
-class CustomerCompanies(BaseCustomer):
+class CustomerEmergencyContacts(BaseCustomer):
 
     @task
     def get_invalid_contacts(self):
