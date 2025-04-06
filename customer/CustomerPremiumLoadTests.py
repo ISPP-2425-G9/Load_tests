@@ -1,0 +1,5 @@
+from customer.CustomerPremiumEmergencyContacts import CustomerPremiumEmergencyContacts
+from customer.CustomerPremiumMessages import CustomerPremiumMessages
+
+CustomerPremiumEmergencyContacts
+CustomerPremiumMessages

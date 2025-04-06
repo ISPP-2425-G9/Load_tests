@@ -9,4 +9,4 @@ class CustomerEmergencyContacts(BaseCustomer):
             if response.status_code >= 400:
                 response.success()
             else:
-                response.failure(f"Se esperaba un error, pero devolvió {response.status_code}")
+                response.failure(f"Expected error but got {response.status_code}")
