@@ -1,10 +1,7 @@
-from locust import task, between
+from locust import task
 from baseCompany import BaseCompany
-from config import BASE_URL
 
-class AdminUserTest(BaseCompany):
-    wait_time = between(1, 3)
-    host = BASE_URL
+class CompanyUsers(BaseCompany):
 
     @task
     def get_company_by_id(self):

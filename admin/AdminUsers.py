@@ -1,11 +1,8 @@
-from locust import task, between
+from locust import task
 from baseAdmin import BaseAdmin
 import random
-from config import BASE_URL
 
-class AdminUserTest(BaseAdmin):
-    wait_time = between(1, 3)
-    host = BASE_URL
+class AdminUsers(BaseAdmin):
 
     @task
     def get_customers(self):

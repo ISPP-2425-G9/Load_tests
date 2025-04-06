@@ -1,10 +1,8 @@
-from locust import task, between
+from locust import task
 from baseAdmin import BaseAdmin
-from config import BASE_URL
 
-class DeathCertificateTest(BaseAdmin):
-    wait_time = between(1, 2)
-    host = BASE_URL
+
+class AdminDeathCertificate(BaseAdmin):
 
     @task
     def get_all_death_certificates(self):

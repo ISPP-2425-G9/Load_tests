@@ -1,11 +1,7 @@
-from locust import task, between
+from locust import task
 from anonymous.baseAnonymous import BaseAnonymous
-from config import BASE_URL
 
 class checkStatus(BaseAnonymous):
-
-    wait_time = between(1, 2)
-    host = BASE_URL
 
     @task
     def check_health_status(self):
